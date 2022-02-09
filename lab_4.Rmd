@@ -1,0 +1,72 @@
+---
+title: "Lab4 - Deep Learning - Neural Networks"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+2.1 R
+2.1.1 Install Python for R
+```{r}
+# load libraries
+librarian::shelf(
+  devtools,
+  keras,
+  reticulate,
+  tensorflow)
+
+# show library versions and paths
+session_info() 
+
+# install Python into user space
+(reticulate::miniconda_path()) # show the Python path
+if (!file.exists(reticulate::miniconda_path()))
+  reticulate::install_miniconda()
+
+# install keras with tensorflow
+if (!keras::is_keras_available())
+  keras::install_keras()
+```
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
