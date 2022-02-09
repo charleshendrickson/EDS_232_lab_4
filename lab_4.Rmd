@@ -30,8 +30,16 @@ if (!keras::is_keras_available())
   keras::install_keras()
 ```
 
+2.1.2 Listing 2.1 Loading the MNIST dataset in Keras
 ```{r}
-
+library(keras)
+mnist <- dataset_mnist()
+```
+```{r}
+train_images <- mnist$train$x
+train_labels <- mnist$train$y
+test_images  <- mnist$test$x
+test_labels  <- mnist$test$y
 ```
 
 
